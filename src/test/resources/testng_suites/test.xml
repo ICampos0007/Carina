@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="apiAutomation" verbose="1" parallel="tests" thread-count="10">
+    <test name="api automation tests" thread-count="5">
+        <classes>
+            <class name="com.solvd.carina.CatNameTest">
+            </class>
+            <class name="com.solvd.carina.CityNameTest">
+            </class>
+            <class name="com.solvd.carina.MusicNameTest">
+            </class>
+            <class name="com.solvd.carina.StarNameTest">
+            </class>
+            <class name="com.solvd.carina.WeatherCityTest">
+            </class>
+        </classes>
+    </test>
+</suite>

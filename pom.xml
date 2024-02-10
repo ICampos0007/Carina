@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.solvd.carina</groupId>
+    <artifactId>Carina</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!--   java properties     -->
+        <java.version>11</java.version>
+
+        <!--   log4j properties     -->
+        <log4j.version>2.21.1</log4j.version>
+
+
+        <!--   testng properties     -->
+        <testng.version>7.9.0</testng.version>
+        <testng.scope>test</testng.scope>
+
+        <!--   carina properties     -->
+        <carina-api.version>1.2.4</carina-api.version>
+        <carina-core.version>1.2.6</carina-core.version>
+
+        <!--   maven surefire plugin properties     -->
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <maven-surefire-plugin.config.suiteXmlFilesPath.testng>
+            ${project.build.directory}/test-classes/testng_suites
+        </maven-surefire-plugin.config.suiteXmlFilesPath.testng>
+        <suite>test</suite>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        ${maven-surefire-plugin.config.suiteXmlFilesPath.testng}/${suite}.xml
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>${testng.scope</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.zebrunner/carina-api -->
+        <dependency>
+            <groupId>com.zebrunner</groupId>
+            <artifactId>carina-api</artifactId>
+            <version>${carina-api.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.zebrunner/carina-core -->
+        <dependency>
+            <groupId>com.zebrunner</groupId>
+            <artifactId>carina-core</artifactId>
+            <version>${carina-core.version}</version>
+        </dependency>
+
+        <!--
+            Required to resolve
+             java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+
+            "java.lang.NoClassDefFoundError: com/google/common/collect/Maps - Selenium"
+             https://stackoverflow.com/questions/18684202/java-lang-noclassdeffounderror-com-google-common-collect-maps-selenium
+             -->
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.0.0-jre</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "${city.name}",
+    "latitude": "Type:Double",
+    "longitude": "Type:Double",
+    "country": "type:String",
+    "population": "Type:Integer"
+  }
+]

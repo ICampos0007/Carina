@@ -1,0 +1,21 @@
+[
+  {
+    "length": "type:String",
+    "origin": "type:String",
+    "image_link": "type:String",
+    "family_friendly": "type:Integer",
+    "shedding": "type:Integer",
+    "general_health": "type:Integer",
+    "playfulness": "type:Integer",
+    "meowing": "type:Integer",
+    "children_friendly": "type:Integer",
+    "grooming": "type:Integer",
+    "intelligence": "type:Integer",
+    "other_pets_friendly": "type:Integer",
+    "min_weight": "type:Double",
+    "max_weight": "type:Double",
+    "min_life_expectancy": "type:Double",
+    "max_life_expectancy": "type:Double",
+    "name": "${cat.name}"
+  }
+]

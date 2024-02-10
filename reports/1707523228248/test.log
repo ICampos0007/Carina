@@ -1,0 +1,155 @@
+[2024-02-10 12:00:28] [31] [INFO] Request method:	GET
+Request URI:	https://api.api-ninjas.com/v1/cats?name=Ragdoll%20Cats&X-Api-Key=ELq6jz1GOJXFGtSZlDWSOg%3D%3DBL0nRvmYU411iZi7
+Request params:	<none>
+Query params:	X-Api-Key=ELq6jz1GOJXFGtSZlDWSOg==BL0nRvmYU411iZi7
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 456
+Connection: keep-alive
+Date: Sat, 10 Feb 2024 00:00:28 GMT
+x-amzn-RequestId: 1052b5e5-e2b5-4b9a-b38b-295abb8a4d28
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, POST
+Access-Control-Allow-Headers: *
+x-amz-apigw-id: S5JoXGHjPHcEv6w=
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+X-Amzn-Trace-Id: Root=1-65c6bc9b-4f52c5104d98f9bd617847da;Parent=040ab22f0bf2f93d;Sampled=0;lineage=31f57f28:0
+X-Cache: Miss from cloudfront
+Via: 1.1 a82744d73a9589befe4efdd723d94198.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SFO53-P4
+X-Amz-Cf-Id: pE7PHFfq4pFP5Ce4TtDdfGDVAx8PlK4LM8Sn3P0S7Ve5ZUOpJSG0BQ==
+
+[
+    {
+        "length": "17 to 21 inches, not including tail",
+        "origin": "Riverside, California, USA",
+        "image_link": "https://api-ninjas.com/images/cats/ragdoll_cats.jpg",
+        "family_friendly": 5,
+        "shedding": 4,
+        "general_health": 3,
+        "playfulness": 4,
+        "meowing": 4,
+        "children_friendly": 5,
+        "grooming": 1,
+        "intelligence": 4,
+        "other_pets_friendly": 4,
+        "min_weight": 10.0,
+        "max_weight": 20.0,
+        "min_life_expectancy": 12.0,
+        "max_life_expectancy": 17.0,
+        "name": "Ragdoll Cats"
+    }
+]
+
+[2024-02-10 12:00:28] [31] [INFO] Request method:	GET
+Request URI:	https://api.api-ninjas.com/v1/city?name=Los%20Angeles&X-Api-Key=ELq6jz1GOJXFGtSZlDWSOg%3D%3DBL0nRvmYU411iZi7
+Request params:	<none>
+Query params:	X-Api-Key=ELq6jz1GOJXFGtSZlDWSOg==BL0nRvmYU411iZi7
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 131
+Connection: keep-alive
+Date: Sat, 10 Feb 2024 00:00:29 GMT
+x-amzn-RequestId: 97127950-c574-47a3-aabc-4417567d380e
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, POST
+Access-Control-Allow-Headers: *
+x-amz-apigw-id: S5JolHixvHcEpsg=
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+X-Amzn-Trace-Id: Root=1-65c6bc9d-61892fb74a8abb3a7b4eb44c;Sampled=0;lineage=00d7b793:0
+X-Cache: Miss from cloudfront
+Via: 1.1 f974c40327cd46f5ebab9861d3047aaa.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SFO53-P4
+X-Amz-Cf-Id: 438yRsyFwXLxCZnOtWAtKTqZiAgMBNne5d9KnghKweOvOyIUgM60YA==
+
+[
+    {
+        "name": "Los Angeles",
+        "latitude": 34.1139,
+        "longitude": -118.407,
+        "country": "US",
+        "population": 12750807,
+        "is_capital": false
+    }
+]
+
+[2024-02-10 12:00:29] [31] [INFO] Request method:	GET
+Request URI:	https://api.lyrics.ovh/v1/%3ATate%20McRae/%3Agreedy
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Sat, 10 Feb 2024 00:00:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1562
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"61a-H7ExsPFbk8llqqJqaaSzOImVbzs"
+
+{
+    "lyrics": "Paroles de la chanson Greedy par Tate McRae\r\n(Woo)\n\nHe said, \"Are you serious? I've tried, but I can't figure out\nI've been next to you all night and still don't know what you're about\nYou keep ta- (Ta-ta-), talkin', but not much comin' out your mouth\nCan't you tell that I want you?\" I say, yeah\n\nI would want myself\nBaby, please believe me\nI'll put you through hell\nJust to know me, yeah, yeah\nSo sure of yourself\nBaby, don't get greedy\n\nThat shit won't end well\nNo, it won't end well\n\n(Uh-uh, uh-uh-uh, uh-uh, woo)\n\nI see you eyein' me down, but you'll never know much past my name\nOr how I'm runnin' this room around and that I'm still half your age\nYeah, you're loo- (Loo-loo-), lookin' at me like I'm some sweet escape\nObvious that you want me, but I said\n\nI would want myself\nBaby, please believe me\nI'll put you through hell\nJust to know me, yeah, yeah\nSo sure of yourself\n\nBaby, don't get greedy\nThat shit won't end well\nNo, it won't end well\n\nHe said, \"I'm just curious, is this for real or just an act?\nCan't tell if you love or hate me, never met someone like that\nDrive me so (So, so) crazy, did you know you got that effect?\"\nI said, \"Lemme check,\" yeah\n\nI would want myself\nBaby, please believe me\nI'll put you through hell\nJust to know me, yeah, yeah\nSo sure of yourself\nBaby, don't get greedy\n\nThat shit won't end well\nNo, it won't end well\n\n(I would want myself)\n(I would want myself) I would want myself\n(I would want myself)\n(I would want myself)\n(Uh-uh, uh-uh-uh, uh)"
+}
+
+[2024-02-10 12:00:29] [31] [INFO] Request method:	GET
+Request URI:	https://api.api-ninjas.com/v1/weather?city=London&X-Api-Key=ELq6jz1GOJXFGtSZlDWSOg%3D%3DBL0nRvmYU411iZi7
+Request params:	<none>
+Query params:	X-Api-Key=ELq6jz1GOJXFGtSZlDWSOg==BL0nRvmYU411iZi7
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 180
+Connection: keep-alive
+Date: Sat, 10 Feb 2024 00:00:30 GMT
+x-amzn-RequestId: 537cf858-651a-42f0-ade3-26a8b6016ff4
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, POST
+Access-Control-Allow-Headers: *
+x-amz-apigw-id: S5JotF8tvHcEBEA=
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+X-Amzn-Trace-Id: Root=1-65c6bc9d-69e72a775407ebbc45e3a367;Parent=6abe5fc000ba28aa;Sampled=0;lineage=21d591a9:0
+X-Cache: Miss from cloudfront
+Via: 1.1 fdd1eada351372fafa8612323f367f28.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SFO53-P4
+X-Amz-Cf-Id: 6gq6Jfex8BA2WNI9ob6B4i2zo0-Xm8QEzOUl5WoPZrM0W4h14TqQZA==
+
+{
+    "cloud_pct": 75,
+    "temp": 10,
+    "feels_like": 10,
+    "humidity": 93,
+    "min_temp": 9,
+    "max_temp": 11,
+    "wind_speed": 2.06,
+    "wind_degrees": 230,
+    "sunrise": 1707463610,
+    "sunset": 1707498159
+}
+
