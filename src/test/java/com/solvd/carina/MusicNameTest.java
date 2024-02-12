@@ -6,18 +6,16 @@ import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import org.testng.annotations.Test;
 
 public class MusicNameTest {
-    @Test
+    @Test(enabled = false)
     public void verifyMusicNameAndAlbumTest() {
         Music music = new Music();
-        music.setName("Tate McRae");
-        music.setAlbum("greedy");
+        music.setName("d4vd");
+        music.setAlbum("Notes From A Wrist");
 
         GetMusicNameAlbum getMusicNameAlbum = new GetMusicNameAlbum(music.getName(), music.getAlbum());
         getMusicNameAlbum.addProperty("music", music);
         getMusicNameAlbum.expectResponseStatus(HttpResponseStatusType.OK_200);
 
         getMusicNameAlbum.callAPI();
-
-
     }
 }

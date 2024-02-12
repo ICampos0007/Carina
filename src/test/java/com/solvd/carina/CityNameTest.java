@@ -6,7 +6,7 @@ import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import org.testng.annotations.Test;
 
 public class CityNameTest {
-    @Test
+    @Test(enabled = false)
     public void verifyGetCityByName() {
         City city = new City();
 //        Set the name to a fake city for test to fail

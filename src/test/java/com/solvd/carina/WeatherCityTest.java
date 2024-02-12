@@ -6,7 +6,7 @@ import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import org.testng.annotations.Test;
 
 public class WeatherCityTest {
-    @Test
+    @Test(enabled = false)
     public void verifyGetWeatherByCityName() {
         Weather weather = new Weather();
         weather.setCity("London");

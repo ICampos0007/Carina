@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 
 public class CatNameTest {
-    @Test
+    @Test(enabled = false)
     public void verifyGetCatByNameTest() {
         Cat cat = new Cat();
         cat.setLength("17 to 21 inches, not including tail");

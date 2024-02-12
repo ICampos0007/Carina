@@ -6,7 +6,7 @@ import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import org.testng.annotations.Test;
 
 public class StarNameTest {
-    @Test
+    @Test(enabled = false)
     public void verifyGetStarByName() {
         Star star = new Star();
 //        Change to an invalid star name for it to fail

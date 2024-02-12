@@ -1,37 +1,32 @@
 package com.solvd.carina.web;
 
 
-import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.solvd.carina.web.components.Header;
+import com.zebrunner.carina.utils.config.Configuration;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends AbstractPage {
-    @FindBy(xpath = "//header//input[@id = 'HeaderSearch_search_query']")
-
-    /* Naming conventions
-         use camelCase, not PascalCase:
-            - camelCase is for non-final variables and methods, PascalCase is reserved for java
-            classes
-                - for example... `ExtendedWebElement` and `HomePage` are classes, searchBar is a
-                    variable, getSearchBar() and isSearchBarPresent() are methods
-     */
-
-    private ExtendedWebElement searchBar;
+    @FindBy(xpath = "//header")
+    private Header header;
+//    @FindBy(xpath = "//header//input[@id = 'HeaderSearch_search_query']")
+//    private ExtendedWebElement searchBar;
 
     public HomePage(WebDriver driver) {
         super(driver);
+//        setPageURL("/");
+//        setPageAbsoluteURL(Configuration.getRequired("home_url"));
     }
 
-    public void  typeSearchInputValue(String value) {
-        searchBar.sendKeys(value);
+    public Header getHeader() {
+        return header;
     }
 
-    public ExtendedWebElement getSearchBar() {
-        return searchBar;
+    @Override
+    public void open() {
+        openURL(Configuration.getRequired("PROD.home_url"));
     }
 
-    public ExtendedWebElement isSearchBarPresent() {
-        return searchBar;
-    }
+
 }
