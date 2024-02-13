@@ -10,6 +10,9 @@ public class SearchBarButtonComponent extends AbstractUIObject {
     @FindBy(xpath = "//button[@aria-label='Search submit']")
     private ExtendedWebElement searchBarButton;
 
+    @FindBy(xpath = "//button[normalize-space()='search']")
+    private ExtendedWebElement targetSearchButton;
+
     public SearchBarButtonComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
@@ -17,5 +20,12 @@ public class SearchBarButtonComponent extends AbstractUIObject {
 
     public ExtendedWebElement getSearchBarButton() {
         return searchBarButton;
+    }
+
+    public ExtendedWebElement getTargetSearchButton() {
+        return targetSearchButton;
+    }
+    public void clickSearchBarButton() {
+        searchBarButton.click();
     }
 }

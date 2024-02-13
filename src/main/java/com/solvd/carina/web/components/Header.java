@@ -16,12 +16,19 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = "//button[@aria-label='Search submit']")
     private SearchBarButtonComponent searchBarButtonComponent;
 
+    @FindBy(xpath = "//input[@id='search']")
+    private TargetSearchLineComponent targetSearchLineComponent;
+
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
     public SearchLineComponent getSearchLineComponent() {
         return searchLineComponent;
+    }
+
+    public TargetSearchLineComponent getTargetSearchLineComponent() {
+        return targetSearchLineComponent;
     }
 
     public LogoComponent getLogoComponent() {

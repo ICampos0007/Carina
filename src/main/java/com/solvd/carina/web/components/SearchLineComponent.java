@@ -13,6 +13,7 @@ public class SearchLineComponent extends AbstractUIObject {
 
 
 
+
     public SearchLineComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
@@ -20,6 +21,7 @@ public class SearchLineComponent extends AbstractUIObject {
     public ExtendedWebElement getSearchBar() {
         return searchBar;
     }
+
 
 
     public String getSearchBarPlaceHolder() {
@@ -30,8 +32,11 @@ public class SearchLineComponent extends AbstractUIObject {
         searchBar.type(value);
     }
 
-    public SearchPage clickSearchBar() {
+
+
+    public void clickSearchBar() {
         searchBar.click();
-        return new SearchPage(getDriver());
+//        return new SearchPage(getDriver());
     }
+
 }

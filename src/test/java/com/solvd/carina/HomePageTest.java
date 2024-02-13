@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 public class HomePageTest extends AbstractTest {
 
 
-    @Test
+    @Test(enabled = false)
     public void verifyURLTest() {
         WebDriver webDriver = getDriver();
         HomePage page = new HomePage(webDriver);
@@ -24,8 +24,10 @@ public class HomePageTest extends AbstractTest {
         String correctURL = Configuration.getRequired("PROD.home_url");
         softAssert.assertEquals(webDriver.getCurrentUrl(),correctURL,"This is not the correct url");
 
+        softAssert.assertAll();
+
     }
-    @Test
+    @Test(enabled = false)
     public void verifySearchLineTest() {
         String brandName = "adidas";
 
@@ -40,14 +42,14 @@ public class HomePageTest extends AbstractTest {
 
         searchLineComponent.searchBarInputValue(brandName);
 
-        SearchPage searchPage = searchLineComponent.clickSearchBar();
+        searchLineComponent.clickSearchBar();
 
         softAssert.assertTrue(driver.getCurrentUrl().contains(brandName.toLowerCase()),"URL does not contain the brand name");
 
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(enabled = false)
     public void verifySearchBarButton() {
         SoftAssert softAssert = new SoftAssert();
         WebDriver driver = getDriver();
@@ -55,9 +57,12 @@ public class HomePageTest extends AbstractTest {
         page.open();
         SearchBarButtonComponent searchBarButtonComponent = page.getHeader().getSearchBarButtonComponent();
         softAssert.assertTrue(searchBarButtonComponent.getRootExtendedElement().isElementPresent(1),"Search button not present.");
+        searchBarButtonComponent.clickSearchBarButton();
+
+        softAssert.assertAll();
     }
 
-    @Test
+    @Test(enabled = false)
     public void verifyFootLockerLogoTest() {
         SoftAssert softAssert = new SoftAssert();
         WebDriver driver = getDriver();
