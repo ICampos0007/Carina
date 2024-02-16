@@ -31,6 +31,9 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = " //div[@id='%s']")
     private NikeIDComponent nikeID;
 
+    @FindBy(xpath = "//a[@aria-label='Sale']")
+    private NikeHoverComponent nikeHover;
+
 
 
 
@@ -69,5 +72,9 @@ public class Header extends AbstractUIObject {
 
     public NikeIDComponent getNikeID() {
         return nikeID;
+    }
+
+    public NikeHoverComponent getNikeHover() {
+        return nikeHover;
     }
 }

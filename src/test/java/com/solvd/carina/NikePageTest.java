@@ -1,12 +1,10 @@
 package com.solvd.carina;
 
 import com.solvd.carina.web.NikePage;
-import com.solvd.carina.web.components.NikeButtonComponent;
-import com.solvd.carina.web.components.NikeIDComponent;
-import com.solvd.carina.web.components.NikeImageComponent;
-import com.solvd.carina.web.components.NikeTextComponent;
+import com.solvd.carina.web.components.*;
 import com.zebrunner.carina.core.AbstractTest;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -59,5 +57,18 @@ public class NikePageTest extends AbstractTest {
 
         softAssert.assertAll();
 
+    }
+    @Test(enabled = false)
+    public void verifyNikeHover() {
+        WebDriver driver = getDriver();
+        NikePage page = new NikePage(driver);
+        SoftAssert softAssert = new SoftAssert();
+        page.open();
+        NikeHoverComponent nikeHoverComponent = page.getHeader().getNikeHover();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(nikeHoverComponent.nikeHover).perform();
+//        nikeHoverComponent.nikeHoverClick.click();
+
+        softAssert.assertAll();
     }
 }
