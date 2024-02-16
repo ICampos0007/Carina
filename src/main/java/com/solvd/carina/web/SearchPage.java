@@ -1,9 +1,8 @@
 package com.solvd.carina.web;
 
+import com.solvd.carina.web.components.NikeButtonComponent;
 import com.solvd.carina.web.components.ProductCard;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
-import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -19,5 +18,11 @@ public class SearchPage extends AbstractPage {
 
     public List<ProductCard> getCards() {
         return cards;
+    }
+
+    private List<NikeButtonComponent> nikeList;
+
+    public List<NikeButtonComponent> getNikeList() {
+        return nikeList;
     }
 }

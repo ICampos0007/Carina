@@ -3,19 +3,20 @@
 <suite name="apiAutomation" verbose="1" parallel="tests" thread-count="10">
     <test name="api automation tests" thread-count="6">
         <classes>
-            <class name="com.solvd.carina.CatNameTest"/>
+            <class name="com.solvd.carina.api.CatNameTest"/>
 
-            <class name="com.solvd.carina.CityNameTest"/>
+            <class name="com.solvd.carina.api.CityNameTest"/>
 
-            <class name="com.solvd.carina.MusicNameTest"/>
+            <class name="com.solvd.carina.api.MusicNameTest"/>
 
-            <class name="com.solvd.carina.StarNameTest"/>
+            <class name="com.solvd.carina.api.StarNameTest"/>
 
-            <class name="com.solvd.carina.WeatherCityTest"/>
+            <class name="com.solvd.carina.api.WeatherCityTest"/>
 
             <class name="com.solvd.carina.HomePageTest"/>
 
             <class name="com.solvd.carina.TargetPageTest"/>
+            <class name="com.solvd.carina.NikePageTest"/>
 
         </classes>
     </test>

@@ -1,4 +1,4 @@
-package com.solvd.carina;
+package com.solvd.carina.api;
 
 import com.solvd.carina.api.GetStarName;
 import com.solvd.carina.bin.Star;

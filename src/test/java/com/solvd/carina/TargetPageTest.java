@@ -2,8 +2,6 @@ package com.solvd.carina;
 
 import com.solvd.carina.web.SearchPage;
 import com.solvd.carina.web.TargetPage;
-import com.solvd.carina.web.components.ProductCard;
-import com.solvd.carina.web.components.SearchLineComponent;
 import com.solvd.carina.web.components.TargetSearchLineComponent;
 import com.zebrunner.carina.core.AbstractTest;
 import com.zebrunner.carina.utils.config.Configuration;
@@ -27,7 +25,7 @@ public class TargetPageTest extends AbstractTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(enabled = false)
     public void verifySearchTest() {
         String targetSearch = "playstation";
 

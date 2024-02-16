@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class ProductCard extends AbstractUIObject {
-    @FindBy(xpath = "//a[@aria-label=\"PlayStation 5 Console Marvel's Spider-Man 2 Bundle\"]")
+    @FindBy(xpath = "")
     private ExtendedWebElement titleElement;
     public ProductCard(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);

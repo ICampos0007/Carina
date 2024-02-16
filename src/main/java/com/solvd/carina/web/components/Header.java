@@ -19,6 +19,21 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = "//input[@id='search']")
     private TargetSearchLineComponent targetSearchLineComponent;
 
+    @FindBy(xpath = "//button[@aria-label='Open Search Modal']//*[name()='svg']")
+    private NikeButtonComponent nikeButton;
+
+    @FindBy(xpath = "(//img[contains(@class,'product-card__hero-image')])[1]")
+    private NikeImageComponent nikeImage;
+
+    @FindBy(xpath = "//a[normalize-space()='Nike Air Max 270']")
+    private NikeTextComponent text;
+
+    @FindBy(xpath = " //div[@id='%s']")
+    private NikeIDComponent nikeID;
+
+
+
+
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
@@ -31,11 +46,28 @@ public class Header extends AbstractUIObject {
         return targetSearchLineComponent;
     }
 
+
     public LogoComponent getLogoComponent() {
         return logoComponent;
     }
 
     public SearchBarButtonComponent getSearchBarButtonComponent() {
         return searchBarButtonComponent;
+    }
+
+    public NikeButtonComponent getNikeButton() {
+        return nikeButton;
+    }
+
+    public NikeImageComponent getNikeImage() {
+        return nikeImage;
+    }
+
+    public NikeTextComponent getNikeText() {
+        return text;
+    }
+
+    public NikeIDComponent getNikeID() {
+        return nikeID;
     }
 }
